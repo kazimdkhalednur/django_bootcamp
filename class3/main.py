@@ -1,21 +1,21 @@
-# class Animal:
-#     name = "Tiger"
+class Animal:
+    name = "Tiger"
 
 
-#     def __init__(self, name):
-#         self.name = name
-#         self.height = 34
+    def __init__(self, name):
+        self.name = name
+        self.height = 34
     
 
-#     def __str__(self):
-#         return "This is Animal Class"
+    def __str__(self):
+        return "This is Animal Class"
 
 
-#     def display(self):
-#         # self.asdf = "greg"
-#         # print(self.asdf)
-#         print(self.name)
-#         print(self.height)
+    def display(self):
+        # self.asdf = "greg"
+        # print(self.asdf)
+        print(self.name)
+        print(self.height)
 
 #     # def display2(self):
 #     #     print(self.asdf)
