@@ -226,3 +226,12 @@ dict
 #     print(asd)
 #     asd += 1 # asd = asd - 1
 
+
+# from decimal import Decimal
+
+# adsf = Decimal(34)
+# print(type(adsf))
+
+# asd = 56
+# dsfg = 56.67
+# print(asd+dsfg)

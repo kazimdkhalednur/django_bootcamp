@@ -1,0 +1,9 @@
+django-admin startproject website .
+python manage.py startapp basic
+
+python manage.py makemigrations
+pytohn manage.py migrate
+pytohn manage.py sqlmigrate
+
+
+python manage.py createsuperuser
