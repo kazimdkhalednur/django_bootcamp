@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Hello world (from templates) Hi, {{name}}. My age is {{age}}
+    {{books}}
+    <br>
+    {{books.id}}. {{books.name}} {{books.price}}
+    {% comment %}
+    <!-- {% for book in books %}
+        {% if book.price > 566 %}
+        {% endcomment %}
+            {{book.id}}. {{book.name}} {{book.price}}<br>
+        {% comment %}
+            {% endif %}
+            {{book.id}}. {{book.name}} {{book.price}}<br>
+            {% endfor%} -->
+    {% endcomment %}
+
+    <h1>{{message}}</h1>
+</body>
+
+</html>
