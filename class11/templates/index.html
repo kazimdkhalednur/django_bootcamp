@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+</head>
+
+<body>
+
+    <h1>Book List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Author</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <h1>{{ count }}</h1>
+            {% comment %}
+            <td><a href="{{ book.get_book_url }}">{{ book.name }}</a></td>
+            <td>{{ book.author }}</td>
+            <td>{{ book.price }}</td>
+            {% endcomment %}
+            {% for book in books %}
+            <tr>
+                <td><a href="{{ book.get_book_url }}">{{ book.name }}</a></td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.price }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    {% if books.has_previous %}
+    <a href="?page=1&size=2">&laquo; first</a>
+    <a href="?page={{ books.previous_page_number }}&size=2">previous</a>
+    {% endif %}
+
+    Page {{ books.number }} of {{ books.paginator.num_pages }}.
+
+    {% if books.has_next %}
+    <a href="?page={{ books.next_page_number }}&size=2">next</a>
+    <a href="?page={{ books.paginator.num_pages }}&size=2">last &raquo;</a>
+    {% endif %}
+</body>
+
+</html>
